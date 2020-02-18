@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14F538076DAA1D6DFB94CA0B /* Pods_FlinkChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9879082611A93A4D21233515 /* Pods_FlinkChallenge.framework */; };
 		BD6A5E4123FC7FF7003B1E4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E4023FC7FF7003B1E4D /* AppDelegate.swift */; };
 		BD6A5E4323FC7FF7003B1E4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E4223FC7FF7003B1E4D /* SceneDelegate.swift */; };
 		BD6A5E4523FC7FF7003B1E4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E4423FC7FF7003B1E4D /* ContentView.swift */; };
@@ -14,6 +15,7 @@
 		BD6A5E4A23FC7FF9003B1E4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6A5E4923FC7FF9003B1E4D /* Preview Assets.xcassets */; };
 		BD6A5E4D23FC7FF9003B1E4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6A5E4B23FC7FF9003B1E4D /* LaunchScreen.storyboard */; };
 		BD6A5E5823FC7FF9003B1E4D /* FlinkChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E5723FC7FF9003B1E4D /* FlinkChallengeTests.swift */; };
+		EB91B40C69510498EB2574BC /* Pods_FlinkChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		613346846866880893D27CDB /* Pods-FlinkChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlinkChallenge.debug.xcconfig"; path = "Target Support Files/Pods-FlinkChallenge/Pods-FlinkChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7372D724071D9791B8207220 /* Pods-FlinkChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlinkChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-FlinkChallengeTests/Pods-FlinkChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C8AEE81F909A839ED76E0B9 /* Pods-FlinkChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlinkChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-FlinkChallengeTests/Pods-FlinkChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9879082611A93A4D21233515 /* Pods_FlinkChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlinkChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55E17337A4CE2A36ADF5FAD /* Pods-FlinkChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlinkChallenge.release.xcconfig"; path = "Target Support Files/Pods-FlinkChallenge/Pods-FlinkChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		BD6A5E3D23FC7FF7003B1E4D /* FlinkChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlinkChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6A5E4023FC7FF7003B1E4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6A5E4223FC7FF7003B1E4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +45,7 @@
 		BD6A5E5323FC7FF9003B1E4D /* FlinkChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlinkChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6A5E5723FC7FF9003B1E4D /* FlinkChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlinkChallengeTests.swift; sourceTree = "<group>"; };
 		BD6A5E5923FC7FF9003B1E4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlinkChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F538076DAA1D6DFB94CA0B /* Pods_FlinkChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB91B40C69510498EB2574BC /* Pods_FlinkChallengeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D93CE730631B8904D1095E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				613346846866880893D27CDB /* Pods-FlinkChallenge.debug.xcconfig */,
+				B55E17337A4CE2A36ADF5FAD /* Pods-FlinkChallenge.release.xcconfig */,
+				7372D724071D9791B8207220 /* Pods-FlinkChallengeTests.debug.xcconfig */,
+				8C8AEE81F909A839ED76E0B9 /* Pods-FlinkChallengeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD6A5E3423FC7FF7003B1E4D = {
 			isa = PBXGroup;
 			children = (
 				BD6A5E3F23FC7FF7003B1E4D /* FlinkChallenge */,
 				BD6A5E5623FC7FF9003B1E4D /* FlinkChallengeTests */,
 				BD6A5E3E23FC7FF7003B1E4D /* Products */,
+				5D93CE730631B8904D1095E2 /* Pods */,
+				DC42C48C82B2AC45F8F56004 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +131,15 @@
 			path = FlinkChallengeTests;
 			sourceTree = "<group>";
 		};
+		DC42C48C82B2AC45F8F56004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9879082611A93A4D21233515 /* Pods_FlinkChallenge.framework */,
+				DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD6A5E5C23FC7FF9003B1E4D /* Build configuration list for PBXNativeTarget "FlinkChallenge" */;
 			buildPhases = (
+				FFBCC2D6FBD091619F06D542 /* [CP] Check Pods Manifest.lock */,
 				BD6A5E3923FC7FF7003B1E4D /* Sources */,
 				BD6A5E3A23FC7FF7003B1E4D /* Frameworks */,
 				BD6A5E3B23FC7FF7003B1E4D /* Resources */,
+				BFD1F1AFE35F93949CF85DC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +166,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD6A5E5F23FC7FF9003B1E4D /* Build configuration list for PBXNativeTarget "FlinkChallengeTests" */;
 			buildPhases = (
+				620C48212C078F821FEC2924 /* [CP] Check Pods Manifest.lock */,
 				BD6A5E4F23FC7FF9003B1E4D /* Sources */,
 				BD6A5E5023FC7FF9003B1E4D /* Frameworks */,
 				BD6A5E5123FC7FF9003B1E4D /* Resources */,
@@ -202,6 +238,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		620C48212C078F821FEC2924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlinkChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFD1F1AFE35F93949CF85DC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlinkChallenge/Pods-FlinkChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlinkChallenge/Pods-FlinkChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlinkChallenge/Pods-FlinkChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBCC2D6FBD091619F06D542 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlinkChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD6A5E3923FC7FF7003B1E4D /* Sources */ = {
@@ -360,6 +460,7 @@
 		};
 		BD6A5E5D23FC7FF9003B1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613346846866880893D27CDB /* Pods-FlinkChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +481,7 @@
 		};
 		BD6A5E5E23FC7FF9003B1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B55E17337A4CE2A36ADF5FAD /* Pods-FlinkChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +502,7 @@
 		};
 		BD6A5E6023FC7FF9003B1E4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7372D724071D9791B8207220 /* Pods-FlinkChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +525,7 @@
 		};
 		BD6A5E6123FC7FF9003B1E4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C8AEE81F909A839ED76E0B9 /* Pods-FlinkChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
