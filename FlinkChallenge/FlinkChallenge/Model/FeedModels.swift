@@ -26,7 +26,7 @@ class CharacterFeed : ObservableObject, RandomAccessCollection {
     var baseURL = "https://rickandmortyapi.com/api/character/?page="
     
     init(){
-        
+        loadMoreCharacters()
     }
     
     subscript(position: Int) -> APICharacter {
@@ -50,6 +50,15 @@ class CharacterFeed : ObservableObject, RandomAccessCollection {
     }
     
     func shouldLoadMoreData(currentItem : APICharacter? = nil) -> Bool{
+        guard let currentItem = currentItem else {
+            return true
+        }
+        
+        for n in (characterListItems.count - 4)...(characterListItems.count - 1) {
+            if n >= 0 && currentItem.id == characterListItems[n].id {
+                return true
+            }
+        }
         return false
     }
     
