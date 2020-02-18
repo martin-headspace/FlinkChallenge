@@ -26,8 +26,8 @@ struct CharacterListItemView : View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("\(character.name)")
-                Text("\(character.gender)").font(.subheadline)
+                Text("\(character.name ?? "Gazorpazork")")
+                Text("\(character.gender ?? "None")").font(.subheadline)
             }
         }
     }

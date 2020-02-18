@@ -75,7 +75,7 @@ class CharacterFeed : ObservableObject, RandomAccessCollection {
             return
         }
         
-        let apiCharacters = parseCharactersFromData(with: data)
+        let apiCharacters = parseCharactersFromData(data: data)
         DispatchQueue.main.async {
             self.characterListItems.append(contentsOf: apiCharacters)
             if apiCharacters.count == 0 {
@@ -89,7 +89,7 @@ class CharacterFeed : ObservableObject, RandomAccessCollection {
         }
     }
     
-    func parseCharactersFromData(with data: Data) -> [APICharacter] {
+    func parseCharactersFromData(data: Data) -> [APICharacter] {
         var response : APICharactersResponse
         do {
             response = try JSONDecoder().decode(APICharactersResponse.self, from: data)
@@ -98,7 +98,7 @@ class CharacterFeed : ObservableObject, RandomAccessCollection {
             return []
         }
         
-        return response.characters 
+        return response.results ?? []
     }
     
 }
