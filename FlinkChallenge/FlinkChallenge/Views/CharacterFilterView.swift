@@ -24,7 +24,10 @@ struct CharacterFilterView: View {
                     self.searchText.isEmpty ? true : $0.name!.lowercased().contains(self.searchText.lowercased())
                 }, id: \.id) { character in
                     ZStack {
-                        Card(character: character).frame(width: 300, height: 300)
+                        Card(image: character.image,
+                        name: character.name,
+                        status: character.status,
+                        episodeCount: character.episode?.count).frame(width: 300, height: 300)
                     NavigationLink(destination: CharacterDetail(character: character)) {
                         EmptyView()
                     }.buttonStyle(PlainButtonStyle())
