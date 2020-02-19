@@ -9,19 +9,29 @@
 import SwiftUI
 
 struct RoundedButton : View {
+    var name : String = ""
+    var status : String = ""
+    var species : String = ""
+    var type: String = ""
+    
     var body: some View {
-        Button(action: {
-            
-        }){
-            HStack {
-                Spacer()
-                Text("Search")
-                    .font(.headline)
-                Spacer()
+        NavigationLink(destination: CharacterFilterView(name: name,
+                                                        status: status,
+                                                        species: species,
+                                                        type: type)) {
+            Button(action: {
+                
+            }){
+                HStack {
+                    Spacer()
+                    Text("Search")
+                        .font(.headline)
+                    Spacer()
+                }
             }
+            .padding(.vertical, 10.0)
+            .padding(.horizontal, 50)
         }
-        .padding(.vertical, 10.0)
-        .padding(.horizontal, 50)
     }
 }
 
@@ -30,6 +40,7 @@ struct AdvancedFilterView: View {
     @State private var status: String = ""
     @State private var species : String = ""
     @State private var type : String = ""
+    
     var body: some View {
         Form {
             Section(header: Text("Basic Data")) {
@@ -41,7 +52,7 @@ struct AdvancedFilterView: View {
                 TextField("Species",text: $species)
                 TextField("Type",text: $type)
             }
-            RoundedButton()
+            RoundedButton(name: name,status: status,species: species,type: type)
         }
     }
 }

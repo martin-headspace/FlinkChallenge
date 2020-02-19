@@ -26,6 +26,7 @@
 		BD6A5E7723FD003A003B1E4D /* SearchBarUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7623FD003A003B1E4D /* SearchBarUIView.swift */; };
 		BD810CEF23FDB95F00D7853A /* AdvancedFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD810CEE23FDB95F00D7853A /* AdvancedFilterView.swift */; };
 		BD810D3723FDD82B00D7853A /* CharacterFilteringController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD810D3623FDD82B00D7853A /* CharacterFilteringController.swift */; };
+		BD810D3923FDDC4200D7853A /* CharacterFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD810D3823FDDC4200D7853A /* CharacterFilterView.swift */; };
 		EB91B40C69510498EB2574BC /* Pods_FlinkChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		BD6A5E7623FD003A003B1E4D /* SearchBarUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarUIView.swift; sourceTree = "<group>"; };
 		BD810CEE23FDB95F00D7853A /* AdvancedFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedFilterView.swift; sourceTree = "<group>"; };
 		BD810D3623FDD82B00D7853A /* CharacterFilteringController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFilteringController.swift; sourceTree = "<group>"; };
+		BD810D3823FDDC4200D7853A /* CharacterFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFilterView.swift; sourceTree = "<group>"; };
 		DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlinkChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,6 +175,7 @@
 				BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */,
 				BD6A5E7623FD003A003B1E4D /* SearchBarUIView.swift */,
 				BD810CEE23FDB95F00D7853A /* AdvancedFilterView.swift */,
+				BD810D3823FDDC4200D7853A /* CharacterFilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				BD6A5E4323FC7FF7003B1E4D /* SceneDelegate.swift in Sources */,
 				BD6A5E6423FC823D003B1E4D /* APICharacter.swift in Sources */,
 				BD6A5E4523FC7FF7003B1E4D /* ContentView.swift in Sources */,
+				BD810D3923FDDC4200D7853A /* CharacterFilterView.swift in Sources */,
 				BD6A5E6623FC855D003B1E4D /* CharacterFeedController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

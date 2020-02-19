@@ -18,8 +18,8 @@ class CharacterFiltering : ObservableObject, RandomAccessCollection {
     
     var baseURL = "https://rickandmortyapi.com/api/character/?"
     
-    init(params : [String]){
-        loadFilteredCharacters(params: params)
+    init(name : String, status : String, species: String, type : String){
+        loadFilteredCharacters(params: [name,status,species,type])
     }
     
     subscript(position: Int) -> APICharacter {
