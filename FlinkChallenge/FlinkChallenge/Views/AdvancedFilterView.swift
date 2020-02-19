@@ -20,7 +20,8 @@ struct RoundedButton : View {
             CharacterFilterView(name: name,
                                 status: status,
                                 species: species,
-                                type: type)) {
+                                type: type,
+                                gender: gender)) {
             Button(action: {}){
                 HStack {
                     Spacer()
@@ -71,7 +72,8 @@ struct AdvancedFilterView: View {
             RoundedButton(name: name,
                           status: statuses[selectedStatus],
                           species: species,
-                          type: type)
+                          type: type,
+                          gender: genders[selectedGender])
         }
     }
 }

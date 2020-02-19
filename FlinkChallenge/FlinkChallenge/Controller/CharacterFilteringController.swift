@@ -18,8 +18,8 @@ class CharacterFiltering : ObservableObject, RandomAccessCollection {
     
     var baseURL = "https://rickandmortyapi.com/api/character/?"
     
-    init(name : String, status : String, species: String, type : String){
-        loadFilteredCharacters(params: [name,status,species,type])
+    init(name : String, status : String, species: String, type : String, gender: String){
+        loadFilteredCharacters(params: [name,status,species,type, gender])
     }
     
     subscript(position: Int) -> APICharacter {
@@ -28,7 +28,7 @@ class CharacterFiltering : ObservableObject, RandomAccessCollection {
     
     func loadFilteredCharacters(params : [String]) {
         var leadingQueryString : String = ""
-        let labels = ["name","status","species","type",]
+        let labels = ["name","status","species","type","gender"]
         for (index, param) in params.enumerated() {
             if !param.isEmpty {
                 leadingQueryString += "\(labels[index])=\(param.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")"

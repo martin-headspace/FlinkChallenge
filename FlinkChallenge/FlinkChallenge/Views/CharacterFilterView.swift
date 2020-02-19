@@ -12,8 +12,8 @@ struct CharacterFilterView: View {
     @ObservedObject var characterFeed : CharacterFiltering
     @State private var searchText : String = ""
     
-    init(name : String, status: String, species : String, type: String) {
-        characterFeed = CharacterFiltering(name: name, status: status, species: species, type: type)
+    init(name : String, status: String, species : String, type: String, gender: String) {
+        characterFeed = CharacterFiltering(name: name, status: status, species: species, type: type, gender: gender)
     }
     
     var body: some View {
@@ -37,6 +37,6 @@ struct CharacterFilterView: View {
 
 struct CharacterFilterView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterFilterView(name: "Rick", status: "", species: "", type: "")
+        CharacterFilterView(name: "Rick", status: "", species: "", type: "", gender: "")
     }
 }

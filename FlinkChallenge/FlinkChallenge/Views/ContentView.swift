@@ -20,11 +20,11 @@ struct ContentView: View {
             }
             
             NavigationView {
-                AdvancedFilterView().navigationBarTitle(Text("Search"))
+                AdvancedFilterView().navigationBarTitle(Text("Advanced Search"))
             }
             .tag(1)
                 .tabItem {
-                    Text("Search")
+                    Text("Advanced Search")
             }
         }
     }
