@@ -14,13 +14,14 @@ struct CharacterFeedView: View {
     var body: some View {
         VStack {
             List(characterFeed) { (character: APICharacter) in
-                HStack{
-                    Spacer()
-                    Card(character: character).frame(width: 300, height: 300)
-                        .onAppear {
-                            self.characterFeed.loadMoreCharacters(currentItem: character)
-                    }
-                    Spacer()
+                ZStack {
+                        Card(character: character).frame(width: 300, height: 300)
+                            .onAppear {
+                                self.characterFeed.loadMoreCharacters(currentItem: character)
+                        }
+                    NavigationLink(destination: CharacterFeedView()) {
+                        EmptyView()
+                    }.buttonStyle(PlainButtonStyle())
                 }
             }
         }

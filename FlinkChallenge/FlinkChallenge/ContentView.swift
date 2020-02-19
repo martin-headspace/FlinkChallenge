@@ -10,7 +10,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        CharacterFeedView()
+        NavigationView {
+            CharacterFeedView().navigationBarTitle(Text("Characters"))
+        }
     }
 }
 
