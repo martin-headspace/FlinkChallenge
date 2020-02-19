@@ -14,7 +14,7 @@ struct CharacterFeedView: View {
     
     var body: some View {
         VStack {
-            SearchBar(text: $searchText)
+            SearchBar(text: $searchText, placeholder: "Search for characters")
             List {
                 ForEach(self.characterFeed.filter {
                     self.searchText.isEmpty ? true : $0.name!.lowercased().contains(self.searchText.lowercased())
