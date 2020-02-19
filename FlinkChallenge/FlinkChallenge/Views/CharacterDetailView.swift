@@ -142,14 +142,11 @@ struct CharacterDetail: View {
                 Text("Episodes").font(.title).bold()
                 ScrollView {
                     VStack {
-                        ForEach (episodes ,id: \.self) { episode in
+                        ForEach (episodes ,id: \.id) { episode in
                             Button(action: {
-                                print("wow")
                                 self.show_modal = true
                             }) {
                                 EpisodeView(episode: episode)
-                            }.sheet(isPresented: self.$show_modal) {
-                                EpisodeModalView(episode: episode)
                             }
                         }
                     }
