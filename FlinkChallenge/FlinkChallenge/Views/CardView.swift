@@ -36,7 +36,7 @@ struct Card: View {
                     
                 }.padding(.horizontal)
             }.padding(.bottom)
-                .background()
+                .background(Color.systemGray6)
             .cornerRadius(10)
             .shadow(radius: 5)
         }

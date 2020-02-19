@@ -91,7 +91,7 @@ struct DataCard : View {
                 }.padding()
             }.padding().frame(width: 300, height: 500, alignment: .center)
         }
-        .background(Color.white)
+        .background(Color.systemGray6)
         .cornerRadius(10)
         .shadow(radius: 5)
         .padding(.bottom)
@@ -106,7 +106,7 @@ struct EpisodeView : View {
             Text("(\(episode.episode!))").font(.caption)
         }
         .frame(width: 300, height: 100, alignment: .center)
-        .background(Color.white)
+        .background(Color.systemGray6)
         .cornerRadius(10)
         .shadow(radius: 5)
         .padding()
@@ -139,7 +139,9 @@ struct CharacterDetail: View {
                     MainCharacterAttributes(character: character)
                 }.padding()
                 DataCard(character: character)
-                Text("Episodes").font(.title).bold()
+                if episodes.count != 0 {
+                    Text("Episodes").font(.title).bold()
+                }
                 ScrollView {
                     VStack {
                         ForEach (episodes ,id: \.id) { episode in
