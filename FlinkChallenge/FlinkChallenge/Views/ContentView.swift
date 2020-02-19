@@ -9,12 +9,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    
     var body: some View {
-        NavigationView {
-            CharacterFeedView().navigationBarTitle(Text("Characters"))
+        TabView {
+            NavigationView {
+                CharacterFeedView().navigationBarTitle(Text("Characters"))
+            }.accentColor(Color(red: 0, green: 0.6, blue: 0.6))
+             .tag(0)
+             .tabItem {
+                Text("Characters")
+            }
+            
+            dummyView()
+            .tag(1)
+                .tabItem {
+                    Text("Search")
+            }
         }
+    }
+}
+
+struct dummyView : View {
+    var body: some View {
+        Text("rendering...")
     }
 }
 
