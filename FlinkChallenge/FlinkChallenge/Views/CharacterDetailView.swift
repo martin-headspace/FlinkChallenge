@@ -100,6 +100,12 @@ struct DataCard : View {
 
 struct CharacterDetail: View {
     var character : APICharacter
+    @ObservedObject var episodes : EpisodeController
+    
+    init(character: APICharacter){
+        self.character = character
+        episodes = EpisodeController(episodes: character.episode ?? [])
+    }
     
     var body: some View {
         ScrollView {
@@ -116,6 +122,14 @@ struct CharacterDetail: View {
                     MainCharacterAttributes(character: character)
                 }.padding()
                 DataCard(character: character)
+                Text("Episodes").font(.title).bold()
+                ScrollView {
+                    VStack {
+                        ForEach (episodes ,id: \.self) { episode in
+                            Text(episode.name!)
+                        }
+                    }
+                }
             }
         }.edgesIgnoringSafeArea(.top)
     }
