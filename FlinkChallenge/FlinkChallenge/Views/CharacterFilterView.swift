@@ -1,16 +1,20 @@
 //
-//  CharacterFeedView.swift
+//  CharacterFilterView.swift
 //  FlinkChallenge
 //
-//  Created by Fernando Martin Garcia Del Angel on 18/02/20.
+//  Created by Fernando Martin Garcia Del Angel on 19/02/20.
 //  Copyright © 2020 Fernando Martin Garcia Del Angel. All rights reserved.
 //
 
 import SwiftUI
 
-struct CharacterFeedView: View {
-    @ObservedObject var characterFeed = CharacterFeed()
+struct CharacterFilterView: View {
+    @ObservedObject var characterFeed : CharacterFiltering
     @State private var searchText : String = ""
+    
+    init(name : String, status: String, species : String, type: String, gender: String) {
+        characterFeed = CharacterFiltering(name: name, status: status, species: species, type: type, gender: gender)
+    }
     
     var body: some View {
         VStack {
@@ -21,21 +25,18 @@ struct CharacterFeedView: View {
                 }, id: \.id) { character in
                     ZStack {
                         Card(character: character).frame(width: 300, height: 300)
-                            .onAppear {
-                                self.characterFeed.loadMoreCharacters(currentItem: character)
-                        }
                     NavigationLink(destination: CharacterDetail(character: character)) {
                         EmptyView()
                     }.buttonStyle(PlainButtonStyle())
                     }
                 }
             }
-        }
+        }.navigationBarTitle(Text("Search Results"))
     }
 }
 
-struct CharacterFeedView_Previews: PreviewProvider {
+struct CharacterFilterView_Previews: PreviewProvider {
     static var previews: some View {
-        CharacterFeedView()
+        CharacterFilterView(name: "Rick", status: "", species: "", type: "", gender: "")
     }
 }

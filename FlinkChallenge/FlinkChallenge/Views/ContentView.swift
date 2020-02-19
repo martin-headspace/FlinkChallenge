@@ -19,10 +19,12 @@ struct ContentView: View {
                 Text("Characters")
             }
             
-            dummyView()
+            NavigationView {
+                AdvancedFilterView().navigationBarTitle(Text("Advanced Search"))
+            }
             .tag(1)
                 .tabItem {
-                    Text("Search")
+                    Text("Advanced Search")
             }
         }
     }
