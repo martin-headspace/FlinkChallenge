@@ -19,7 +19,7 @@ struct CharacterFeedView: View {
                             .onAppear {
                                 self.characterFeed.loadMoreCharacters(currentItem: character)
                         }
-                    NavigationLink(destination: CharacterFeedView()) {
+                    NavigationLink(destination: CharacterDetail(character: character)) {
                         EmptyView()
                     }.buttonStyle(PlainButtonStyle())
                 }

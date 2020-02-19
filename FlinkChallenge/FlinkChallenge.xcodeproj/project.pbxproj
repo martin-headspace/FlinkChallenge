@@ -19,6 +19,7 @@
 		BD6A5E6623FC855D003B1E4D /* FeedModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E6523FC855D003B1E4D /* FeedModels.swift */; };
 		BD6A5E6923FC8F02003B1E4D /* CharacterFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E6823FC8F01003B1E4D /* CharacterFeedView.swift */; };
 		BD6A5E6C23FC9ADF003B1E4D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E6B23FC9ADF003B1E4D /* Card.swift */; };
+		BD6A5E6E23FCBC01003B1E4D /* CharacterDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E6D23FCBC01003B1E4D /* CharacterDetail.swift */; };
 		EB91B40C69510498EB2574BC /* Pods_FlinkChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		BD6A5E6523FC855D003B1E4D /* FeedModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModels.swift; sourceTree = "<group>"; };
 		BD6A5E6823FC8F01003B1E4D /* CharacterFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterFeedView.swift; sourceTree = "<group>"; };
 		BD6A5E6B23FC9ADF003B1E4D /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		BD6A5E6D23FCBC01003B1E4D /* CharacterDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetail.swift; sourceTree = "<group>"; };
 		DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlinkChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +156,7 @@
 			children = (
 				BD6A5E6823FC8F01003B1E4D /* CharacterFeedView.swift */,
 				BD6A5E6B23FC9ADF003B1E4D /* Card.swift */,
+				BD6A5E6D23FCBC01003B1E4D /* CharacterDetail.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD6A5E6E23FCBC01003B1E4D /* CharacterDetail.swift in Sources */,
 				BD6A5E6C23FC9ADF003B1E4D /* Card.swift in Sources */,
 				BD6A5E6923FC8F02003B1E4D /* CharacterFeedView.swift in Sources */,
 				BD6A5E4123FC7FF7003B1E4D /* AppDelegate.swift in Sources */,
