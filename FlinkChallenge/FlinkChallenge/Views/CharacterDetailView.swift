@@ -98,8 +98,25 @@ struct DataCard : View {
     }
 }
 
+struct EpisodeView : View {
+    var episode : Episode
+    var body: some View {
+        HStack {
+            Text(episode.name!).font(.headline).bold()
+            Text("(\(episode.episode!))").font(.caption)
+        }
+        .frame(width: 300, height: 100, alignment: .center)
+        .background(Color.white)
+        .cornerRadius(10)
+        .shadow(radius: 5)
+        .padding()
+    }
+}
+
 struct CharacterDetail: View {
     var character : APICharacter
+    @State private var show_modal = false
+    
     @ObservedObject var episodes : EpisodeController
     
     init(character: APICharacter){
@@ -126,15 +143,14 @@ struct CharacterDetail: View {
                 ScrollView {
                     VStack {
                         ForEach (episodes ,id: \.self) { episode in
-                            HStack {
-                                Text(episode.name!).font(.headline).bold()
-                                Text("(\(episode.episode!))").font(.caption)
+                            Button(action: {
+                                print("wow")
+                                self.show_modal = true
+                            }) {
+                                EpisodeView(episode: episode)
+                            }.sheet(isPresented: self.$show_modal) {
+                                EpisodeModalView(episode: episode)
                             }
-                            .frame(width: 300, height: 100, alignment: .center)
-                            .background(Color.white)
-                            .cornerRadius(10)
-                            .shadow(radius: 5)
-                            .padding()
                         }
                     }
                 }

@@ -22,6 +22,7 @@
 		BD6A5E6E23FCBC01003B1E4D /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E6D23FCBC01003B1E4D /* CharacterDetailView.swift */; };
 		BD6A5E7123FCEB6C003B1E4D /* EpisodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7023FCEB6C003B1E4D /* EpisodeController.swift */; };
 		BD6A5E7323FCEBA0003B1E4D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7223FCEBA0003B1E4D /* Episode.swift */; };
+		BD6A5E7523FCFD98003B1E4D /* EpisodeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */; };
 		EB91B40C69510498EB2574BC /* Pods_FlinkChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		BD6A5E6D23FCBC01003B1E4D /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		BD6A5E7023FCEB6C003B1E4D /* EpisodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeController.swift; sourceTree = "<group>"; };
 		BD6A5E7223FCEBA0003B1E4D /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModalView.swift; sourceTree = "<group>"; };
 		DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlinkChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -121,7 +123,6 @@
 				BD6A5E6223FC81E2003B1E4D /* Model */,
 				BD6A5E4023FC7FF7003B1E4D /* AppDelegate.swift */,
 				BD6A5E4223FC7FF7003B1E4D /* SceneDelegate.swift */,
-				BD6A5E4423FC7FF7003B1E4D /* ContentView.swift */,
 				BD6A5E4623FC7FF9003B1E4D /* Assets.xcassets */,
 				BD6A5E4B23FC7FF9003B1E4D /* LaunchScreen.storyboard */,
 				BD6A5E4E23FC7FF9003B1E4D /* Info.plist */,
@@ -159,9 +160,11 @@
 		BD6A5E6723FC8EEC003B1E4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BD6A5E4423FC7FF7003B1E4D /* ContentView.swift */,
 				BD6A5E6823FC8F01003B1E4D /* CharacterFeedView.swift */,
 				BD6A5E6B23FC9ADF003B1E4D /* CardView.swift */,
 				BD6A5E6D23FCBC01003B1E4D /* CharacterDetailView.swift */,
+				BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				BD6A5E6E23FCBC01003B1E4D /* CharacterDetailView.swift in Sources */,
 				BD6A5E6C23FC9ADF003B1E4D /* CardView.swift in Sources */,
 				BD6A5E6923FC8F02003B1E4D /* CharacterFeedView.swift in Sources */,
+				BD6A5E7523FCFD98003B1E4D /* EpisodeModalView.swift in Sources */,
 				BD6A5E7323FCEBA0003B1E4D /* Episode.swift in Sources */,
 				BD6A5E7123FCEB6C003B1E4D /* EpisodeController.swift in Sources */,
 				BD6A5E4123FC7FF7003B1E4D /* AppDelegate.swift in Sources */,

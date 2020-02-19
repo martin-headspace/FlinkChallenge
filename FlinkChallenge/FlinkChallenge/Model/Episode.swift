@@ -35,7 +35,7 @@ class Episode : Identifiable, Codable, Hashable {
         air_date = "N/A"
         episode = "N/A"
         characters = ["N/A"]
-        url = ""
-        created = ""
+        url = "http"
+        created = "once"
     }
 }
