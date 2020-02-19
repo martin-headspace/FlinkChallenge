@@ -10,11 +10,16 @@ import SwiftUI
 
 struct CharacterFeedView: View {
     @ObservedObject var characterFeed = CharacterFeed()
+    @State private var searchText : String = ""
     
     var body: some View {
         VStack {
-            List(characterFeed) { (character: APICharacter) in
-                ZStack {
+            SearchBar(text: $searchText, placeholder: "Search for characters")
+            List {
+                ForEach(self.characterFeed.filter {
+                    self.searchText.isEmpty ? true : $0.name!.lowercased().contains(self.searchText.lowercased())
+                }, id: \.id) { character in
+                    ZStack {
                         Card(character: character).frame(width: 300, height: 300)
                             .onAppear {
                                 self.characterFeed.loadMoreCharacters(currentItem: character)
@@ -26,6 +31,7 @@ struct CharacterFeedView: View {
             }
         }
     }
+}
 }
 
 struct CharacterFeedView_Previews: PreviewProvider {
