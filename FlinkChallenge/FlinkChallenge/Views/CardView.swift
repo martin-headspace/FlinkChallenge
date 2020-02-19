@@ -29,8 +29,7 @@ struct Card: View {
                             .foregroundColor(.gray)
                     }
                     Spacer()
-                    Image(systemName: "info.circle")
-                        .foregroundColor(.gray)
+                    
                 }.padding(.horizontal)
             }.padding(.bottom)
                 .background(Color.white)

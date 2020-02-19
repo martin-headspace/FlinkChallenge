@@ -16,7 +16,11 @@ struct ContentView: View {
             }.accentColor(Color(red: 0, green: 0.6, blue: 0.6))
              .tag(0)
              .tabItem {
-                Text("Characters")
+                VStack {
+                    Image(systemName: "person.circle.fill")
+                    .foregroundColor(.gray)
+                    Text("Advanced Search")
+                }
             }
             
             NavigationView {
@@ -24,7 +28,11 @@ struct ContentView: View {
             }
             .tag(1)
                 .tabItem {
-                    Text("Advanced Search")
+                    VStack {
+                        Image(systemName: "magnifyingglass.circle.fill")
+                        .foregroundColor(.gray)
+                        Text("Advanced Search")
+                    }
             }
         }
     }
