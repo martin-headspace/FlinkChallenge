@@ -23,7 +23,12 @@ class EpisodeController : ObservableObject, RandomAccessCollection{
         getEpisodes(episodes: episodes)
     }
     
-    func getEpisodeFromURL(with url : String) {
+    /**
+           Retrieves an episode from a given URL and appends it to the episode list
+           - Parameters:
+                - url: Episode URL
+    */
+    private func getEpisodeFromURL(with url : String) {
         if let url = URL(string: url) {
            URLSession.shared.dataTask(with: url) { data, response, error in
               if let data = data {
@@ -38,6 +43,11 @@ class EpisodeController : ObservableObject, RandomAccessCollection{
         }
     }
     
+    /**
+           Retrieves all episodes and appends it to the list observable
+           - Parameters:
+                - episodes: Episode Array
+    */
     func getEpisodes(episodes : [String]) {
         for episode in episodes {
             DispatchQueue.main.async {
