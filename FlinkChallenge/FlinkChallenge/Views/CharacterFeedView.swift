@@ -12,22 +12,17 @@ struct CharacterFeedView: View {
     @ObservedObject var characterFeed = CharacterFeed()
     
     var body: some View {
-        List(characterFeed) { (character: APICharacter) in
-            CharacterListItemView(character: character)
-                .onAppear {
-                    self.characterFeed.loadMoreCharacters(currentItem: character)
-            }
-        }
-    }
-}
-
-struct CharacterListItemView : View {
-    var character : APICharacter
-    var body: some View {
-        HStack {
-            VStack(alignment: .leading) {
-                Text("\(character.name ?? "Gazorpazork")")
-                Text("\(character.gender ?? "None")").font(.subheadline)
+        VStack {
+            List(characterFeed) { (character: APICharacter) in
+                ZStack {
+                        Card(character: character).frame(width: 300, height: 300)
+                            .onAppear {
+                                self.characterFeed.loadMoreCharacters(currentItem: character)
+                        }
+                    NavigationLink(destination: CharacterDetail(character: character)) {
+                        EmptyView()
+                    }.buttonStyle(PlainButtonStyle())
+                }
             }
         }
     }
