@@ -19,7 +19,9 @@ struct ContentView: View {
                 Text("Characters")
             }
             
-            dummyView()
+            NavigationView {
+                AdvancedFilterView().navigationBarTitle(Text("Search"))
+            }
             .tag(1)
                 .tabItem {
                     Text("Search")

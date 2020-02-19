@@ -24,6 +24,7 @@
 		BD6A5E7323FCEBA0003B1E4D /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7223FCEBA0003B1E4D /* Episode.swift */; };
 		BD6A5E7523FCFD98003B1E4D /* EpisodeModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */; };
 		BD6A5E7723FD003A003B1E4D /* SearchBarUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6A5E7623FD003A003B1E4D /* SearchBarUIView.swift */; };
+		BD810CEF23FDB95F00D7853A /* AdvancedFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD810CEE23FDB95F00D7853A /* AdvancedFilterView.swift */; };
 		EB91B40C69510498EB2574BC /* Pods_FlinkChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		BD6A5E7223FCEBA0003B1E4D /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModalView.swift; sourceTree = "<group>"; };
 		BD6A5E7623FD003A003B1E4D /* SearchBarUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarUIView.swift; sourceTree = "<group>"; };
+		BD810CEE23FDB95F00D7853A /* AdvancedFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedFilterView.swift; sourceTree = "<group>"; };
 		DFA73F2EF25F32DFDB17F885 /* Pods_FlinkChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlinkChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 				BD6A5E6D23FCBC01003B1E4D /* CharacterDetailView.swift */,
 				BD6A5E7423FCFD98003B1E4D /* EpisodeModalView.swift */,
 				BD6A5E7623FD003A003B1E4D /* SearchBarUIView.swift */,
+				BD810CEE23FDB95F00D7853A /* AdvancedFilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD6A5E6E23FCBC01003B1E4D /* CharacterDetailView.swift in Sources */,
+				BD810CEF23FDB95F00D7853A /* AdvancedFilterView.swift in Sources */,
 				BD6A5E6C23FC9ADF003B1E4D /* CardView.swift in Sources */,
 				BD6A5E6923FC8F02003B1E4D /* CharacterFeedView.swift in Sources */,
 				BD6A5E7523FCFD98003B1E4D /* EpisodeModalView.swift in Sources */,
