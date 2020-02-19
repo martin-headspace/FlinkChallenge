@@ -126,7 +126,15 @@ struct CharacterDetail: View {
                 ScrollView {
                     VStack {
                         ForEach (episodes ,id: \.self) { episode in
-                            Text(episode.name!)
+                            HStack {
+                                Text(episode.name!).font(.headline).bold()
+                                Text("(\(episode.episode!))").font(.caption)
+                            }
+                            .frame(width: 300, height: 100, alignment: .center)
+                            .background(Color.white)
+                            .cornerRadius(10)
+                            .shadow(radius: 5)
+                            .padding()
                         }
                     }
                 }
