@@ -19,7 +19,7 @@ struct ContentView: View {
                 VStack {
                     Image(systemName: "person.circle.fill")
                     .foregroundColor(.gray)
-                    Text("Advanced Search")
+                    Text("Characters")
                 }
             }
             
