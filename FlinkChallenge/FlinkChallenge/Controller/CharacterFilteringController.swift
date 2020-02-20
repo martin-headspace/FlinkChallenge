@@ -26,6 +26,11 @@ class CharacterFiltering : ObservableObject, RandomAccessCollection {
         return characterListItems[position]
     }
     
+    /**
+           Retrieves a character array based on passed parameters
+           - Parameters:
+                - params: Array of possible search params (name, status, species, type, and gender)
+    */
     func loadFilteredCharacters(params : [String]) {
         var leadingQueryString : String = ""
         let labels = ["name","status","species","type","gender"]
@@ -44,6 +49,13 @@ class CharacterFiltering : ObservableObject, RandomAccessCollection {
         task.resume()
     }
     
+    /**
+           Parses characters from response and error handles any possible issue
+           - Parameters:
+            - data: Response data from the URLRequest Closure
+            - response: URLResponse object to check for any data we should find useful
+            - error: Error object to retrieve possible mistakes
+    */
     func parseCharactersFromResponse(data: Data?, response : URLResponse?, error : Error?) {
         guard error == nil else {
             print("Error: \(error?.localizedDescription ?? "Unknown error produced")")
@@ -66,6 +78,12 @@ class CharacterFiltering : ObservableObject, RandomAccessCollection {
         }
     }
     
+    /**
+          Parses the Data from Rick and Morty's request to an array of characters
+          - Parameters:
+               - data: Response data from the URLRequest Closure
+            - Returns: Array of APICharacters
+       */
     func parseCharactersFromData(data: Data) -> [APICharacter] {
         var response : APICharactersResponse
         do {
