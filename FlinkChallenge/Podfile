@@ -7,7 +7,6 @@ target 'FlinkChallenge' do
 
   # Pods for FlinkChallenge
   pod 'SDWebImageSwiftUI'
-  pod 'SVProgressHUD'
 
   target 'FlinkChallengeTests' do
     inherit! :search_paths
