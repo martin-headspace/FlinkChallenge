@@ -1,7 +1,7 @@
 # 🚲 FlinkChallenge - The Flink Challenge App
 
-A companion project to the
-[NSHipster article about Swift Documentation](https://nshipster.com/swift-documentation/).
+A project consuming the
+[Rick and Morty API](https://rickandmortyapi.com).
 
 ## Requirements
 
